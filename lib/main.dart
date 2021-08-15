@@ -8,11 +8,11 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MyApp());
+  runApp(const GetCoffeeApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+class GetCoffeeApp extends StatelessWidget {
+  const GetCoffeeApp({Key key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -60,6 +60,6 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
 
-    return MyApp();
+    return GetCoffeeApp();
   }
 }
